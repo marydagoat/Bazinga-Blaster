@@ -1,3 +1,5 @@
+currentLevel = 0
+
 -- Runs once when the game starts
 function love.load()
     -- 1. Load your PNG image (remember the png needs to be inside ur game folder)
@@ -34,6 +36,7 @@ function love.load()
         spawnSquare()
     end
 end
+
 
 -- Function to create a new square at a random position
 function spawnSquare()
@@ -116,4 +119,6 @@ function love.draw()
     love.graphics.setColor(1, 1, 1) -- Ensure text is white
     love.graphics.print("Use Arrow Keys to move!", 10, 10)
     love.graphics.print("Squares Collected: " .. score, 10, 30)
+    --print level
+  love.graphics.print("Level: " .. tostring(currentLevel+1), 10,50)
 end
