@@ -30,7 +30,7 @@ function love.load()
     squares = {}
     
     -- Spawn initial squares
-    for i = 1, 3 do
+    for i = 1, 5 do
         spawnSquare()
     end
 end
@@ -116,4 +116,4 @@ function love.draw()
     love.graphics.setColor(1, 1, 1) -- Ensure text is white
     love.graphics.print("Use Arrow Keys to move!", 10, 10)
     love.graphics.print("Squares Collected: " .. score, 10, 30)
-end 
+end
