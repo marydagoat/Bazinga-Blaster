@@ -117,3 +117,6 @@ function love.draw()
     love.graphics.print("Use Arrow Keys to move!", 10, 10)
     love.graphics.print("Squares Collected: " .. score, 10, 30)
 end 
+
+
+67676767
